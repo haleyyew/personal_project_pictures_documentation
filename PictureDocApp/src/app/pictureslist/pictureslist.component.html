@@ -1,0 +1,13 @@
+<div class="listContainer">
+  <!--<ul class="list-group" *ngFor="let item of picturesList">-->
+    <!--&lt;!&ndash;<li class="list-group-item">{{item.Name}}</li>&ndash;&gt;-->
+  <!--</ul>-->
+  <!--<li class="list-group-item"><img [src]={{item.name}} alt="{{item.comment}}" /></li>-->
+  <div *ngFor="let item of picturesList">
+    <textarea rows="1" cols="50">{{item.name}}</textarea>
+    <textarea rows="1" cols="50">{{item.comment}}</textarea> <br>
+    <img [src]="item.name" [alt]="item.comment" height="360px" />
+  </div>
+
+</div>
+<!--<img [src]="'assets/2018-08-21 18.51.43.jpg'" alt="last" />-->

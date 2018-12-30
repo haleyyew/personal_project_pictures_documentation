@@ -1,0 +1,12 @@
+mongoexport --host localhost --db picturesDb --collection picture --type=csv --out mongo_picture.csv --fields name,comment,version
+
+mongo
+use picturesDb
+db.picture.find()
+db.picture.insert({name:'t2',comment:'first',version:1})
+db.picture.find({name:'t2',version:1})
+db.picture.drop()
+db.picture.count()
+exit
+
+mongoimport -d picturesDb -c picture --type csv --file mongo_picture.csv --headerline

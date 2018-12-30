@@ -1,0 +1,35 @@
+body {
+    background-color: WhiteSmoke ;
+}
+h1 {
+    color: black;
+	margin-bottom: 0px;
+}
+p {
+    color: black;
+	margin-top: 0px;
+}
+
+div.container {
+    width: 100%;
+}
+
+header{
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+}
+
+article {
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
