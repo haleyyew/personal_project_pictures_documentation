@@ -14,7 +14,7 @@ cd PictureDocServer
 node app.js
 (3)
 cd PictureDocApp
-nmp install
+npm install
 npm start
 
 To Init:
